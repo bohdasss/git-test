@@ -1,0 +1,160 @@
+
+.conteiner {
+  max-width: 1200px;
+  padding: 15px;
+  margin: 0 auto;
+  background: #F9F9F9;
+}
+
+body {
+  color: #151515;
+}
+a {
+  text-decoration: none;
+  color: #151515;
+}
+
+.custom-checkbox {
+  display: flex;
+  align-items: center;
+  padding-bottom: 12px;
+  &:last-child{
+      padding-bottom: 0;
+  }
+}
+
+.custom-checkbox .checkbox {
+  margin-right: 10px;
+}
+
+.custom-checkbox input {
+  -webkit-appearance: none;
+  position: absolute;
+}
+
+.checkbox {
+  position: relative;
+  width: 20px;
+  height: 20px;
+  border: 1.5px solid #d1d1d1;
+  border-radius: 2px;
+  background: transparent;
+   cursor: pointer;
+}
+
+.checkmark {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 80%;
+  height: auto;
+  display: none;
+}
+
+.custom-checkbox input:checked ~ .checkbox .checkmark {
+  display: block;
+ 
+}
+
+.custom-checkbox input:checked ~ .checkbox {
+  background: #6a983c;
+  border: 1.5px solid #46760a;
+  transition: background-color 0.5s, border 0.5s;
+  cursor: pointer;
+}
+
+.btn {
+  padding: 13px 16px;
+  font-weight: 700;
+  font-size: 15px;
+  line-height: 22px;
+  background: #6a983c;
+  border: 2px solid #46760a;
+  border-radius: 12px;
+  color: #ffffff;
+  cursor: pointer;
+}
+.btn-two {
+  padding: 13px 16px;
+  font-weight: 700;
+  font-size: 15px;
+  line-height: 22px;
+  background: transparent;
+  border: none;
+  border-radius: 12px;
+  color: #A9A9A9;
+  cursor: pointer;
+}
+
+.cover{
+
+  &__cart {
+  }
+  &__cart-inner {
+    border-radius: 12px;
+    background: #ffffff;
+    border: 1px solid #d1d1d1;
+    padding: 16px;
+  }
+  &__cart-img {
+    width: 236px;
+    height: 180px;
+    background-image: url(../images/image\ 26.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    border-radius: 12px;
+    position: relative;
+    &::before {
+      position: absolute;
+      content: "- 36%";
+      color: #6a983c;
+      background-color: #f4f8ec;
+      padding: 0 6px;
+      border-radius: 12px;
+      left: 12px;
+      top: 12px;
+      font-weight: 600;
+      font-size: 12px;
+      line-height: 18px;
+    }
+  }
+  &__cart-inner-text {
+    padding: 16px 0;
+  }
+  &__cart-inner {
+  }
+  &__cart-title {
+    font-weight: 500;
+    font-size: 15px;
+    line-height: 22px;
+    color: #151515;
+    padding-bottom: 5px;
+  }
+  &__cart-subtitle {
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 16px;
+    color: #575757;
+  }
+  &__star {
+    padding-top: 15px;
+  }
+  &__cart-block {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  &__cart-price {
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 27px;
+    color: #151515;
+  }
+  &__cart-subprice {
+    font-weight: 600;
+    font-size: 12px;
+    line-height: 18px;
+    color: #a9a9a9;
+  }
+}
